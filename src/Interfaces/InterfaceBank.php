@@ -1,6 +1,6 @@
 <?php
 
-namespace Interface;
+namespace App\Interfaces;
 
 interface InterfaceBank {
     public function cashout(int $amount): bool;

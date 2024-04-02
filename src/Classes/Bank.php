@@ -2,8 +2,8 @@
 
 namespace App\Classes;
 
-use Interface\InterfaceBank;
-use Config\Config;
+use App\Interfaces\InterfaceBank;
+use App\Config\Config;
 
 class Bank implements InterfaceBank {
 
