@@ -10,7 +10,7 @@ final class PropertyTest extends TestCase {
 
     public function testPropertyOwnership(): void {
 
-        $player = new Player("John Doe");
+        $player = new Player("Sofian");
         $rollResult = $player->rollDice();
         echo "Le joueur " . $player->getName() . " a obtenu un résultat de : " . $rollResult;
 
