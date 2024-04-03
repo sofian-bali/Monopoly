@@ -22,8 +22,4 @@ class CommunityChestCard extends Card {
         }
      
     }
-
-    public function addMoney() {
-        
-    }
 }
