@@ -36,6 +36,7 @@ final class DicesTest extends TestCase {
         $this->assertTrue($dices->is_double());
 
         // Testez ensuite le cas où les deux dés ont des valeurs différentes
+        $dices->dice1->setValue(2);
         $dices->dice2->setValue(4);
         $this->assertFalse($dices->is_double());
     }
