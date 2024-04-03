@@ -14,22 +14,22 @@ final class DiceTest extends TestCase {
         $this->assertSame($dice->getNbFace(), 6);
     }
 
-    // public function testDiceCreation(): void
-    // {
-    //     // code ici...
-    // }
-
+    public function testDiceCreation(): void
+    {
+        $dice = new Dice();
+        
+        $this->assertInstanceOf(Dice::class, $dice);
+        
+        $this->assertSame(6, $dice->getNbFace());
+    }
+    
     public function testRoll(): void
     {
         $dice = new Dice();
-        // le nombre généré est bien de type "int"
         $nb = $dice->roll();
         $this->assertTrue( gettype($nb) == "integer" );
-        // le nombre généré doit être entre 1 et le nombre de face du dé et il est retourné
         $this->assertTrue( $nb >= 1 && $nb <= $dice->getNbFace() );
-        // le nombre généré est bien stocké dans $this->value
         $this->assertTrue($nb == $dice->getValue());
-        // le nombre généré est bien aléatoire
         $base_value = $dice->roll();
         $nb_rounds = 10;
         $result = False;
