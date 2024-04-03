@@ -27,4 +27,5 @@ class Dices {
         return $this->dice1->getValue() == $this->dice2->getValue();
     }
 
+
 }

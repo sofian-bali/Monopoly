@@ -44,12 +44,12 @@ class Dice implements InterfaceDice {
     }
 
     // Imaginons que je veuille que ça soit possible
-    // public function setValue(int $newValue): void
-    // {
-    //     // rajouter toutes les vérification integer + entre 1 et 6
-    //     if( $newValue <= $this->nbFace &&  $newValue >= 1 ) {
-    //         $this->value = $newValue;
-    //     }
-    // }
+     public function setValue(int $newValue): void
+     {
+         // rajouter toutes les vérification integer + entre 1 et 6
+         if( $newValue <= $this->nbFace &&  $newValue >= 1 ) {
+             $this->value = $newValue;
+         }
+     }
 
 }

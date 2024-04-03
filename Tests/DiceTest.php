@@ -43,4 +43,5 @@ final class DiceTest extends TestCase {
         $this->assertTrue($result);
     }
 
+
 }
